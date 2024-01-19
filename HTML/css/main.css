@@ -1,0 +1,85 @@
+/* Globální nastavení pro celý dokument */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Výchozí písmo: Arial s fallbackem na Helvetica a bezpatkové písmo */
+    background-image: url("../img/pozadi.jpg"); /* Obrázek pozadí pro celý dokument */
+    background-repeat: no-repeat; /* Pozadí se nebude opakovat */
+    background-size: cover; /* Pozadí pokryje celou plochu, může oříznout části obrázku */
+}
+
+/* Nastavení pro nadpis první úrovně */
+h1 {
+    text-align: center; /* Text bude zarovnán na střed */
+    color: black; /* Barva textu bude bílá */
+    background-color: white;
+    font-size: 50px; /* Velikost písma 50 pixelů */
+    margin-top: 50px; /* Horní okraj 50 pixelů */
+    margin-right: 400px;
+    margin-left: 400px;
+    text-transform: uppercase; /* Text bude zobrazen velkými písmeny */
+}
+
+/* Nastavení pro nadpis druhé úrovně */
+h2 {
+    text-align: center; /* Text bude zarovnán na střed */
+    color: rgb(239, 212, 7); /* Specifická barva textu ve formátu RGB */
+    background-color:black;
+    font-size: 30px; /* Velikost písma 30 pixelů */
+    margin-top: 30px; /* Horní okraj 30 pixelů */
+    margin:-right 50px;
+    margin:-left 50px;
+    text-transform: uppercase; /* Text bude zobrazen velkými písmeny */
+}
+
+/* Nastavení pro odkazy v nadpisu třetí úrovně */
+h3 a {
+    color: rgb(25, 82, 189); /* Specifická barva textu ve formátu RGB */
+    font-size: 20px; /* Velikost písma 20 pixelů */
+    text-decoration: none; /* Bez podtržení textu */
+}
+
+/* Efekt přejetí myší pro odkazy v nadpisu třetí úrovně */
+h3 a:hover {
+    color: rgb(134, 59, 196); /* Změní barvu textu při najetí myší */
+    text-decoration: underline; /* Přidá podtržení textu při najetí myší */
+}
+
+/* Vycentrování obsahu hlavní části stránky */
+main {
+    width: 1200px; /* Šířka kontejneru */
+    margin: 0 auto; /* Automatické vycentrování */
+}
+
+/* Flex kontejner pro položky */
+.flex-container {
+    display: flex; /* Zapíná flexbox layout */
+    background-color: black; /* Barva pozadí */
+    flex-wrap: wrap; /* Položky se budou zalamovat */
+}
+
+/* Styl pro položky ve flex kontejneru */
+.flex-container > div {
+    background-color: white; /* Barva pozadí položek */
+    margin: 10px; /* Okraj kolem položek */
+    padding: 20px; /* Vnitřní odsazení položek */
+    font-size: 14px; /* Velikost písma */
+    flex: 25%; /* Flex-basis pro položky, zabírají 25% rodiče */
+}
+
+/* Styl pro patičku */
+footer {
+    text-align: center; /* Text bude zarovnán na střed */
+    color: black; /* Barva textu bude bílá */
+    font-size: 20px; /* Velikost písma 20 pixelů */
+    margin-top: 50px; /* Horní okraj 50 pixelů */
+}
+
+/* Media query - responzivní design pro úpravu layoutu na menších obrazovkách */
+@media screen and (max-width: 1200px) {
+    main {
+        width: 90%; /* Hlavní část zabere 90% šířky */
+    }   
+     
+    .flex-container {
+        flex-direction: column; /* Položky budou pod sebou ve sloupci */
+    }
+}

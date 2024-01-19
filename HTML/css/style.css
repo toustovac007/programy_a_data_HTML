@@ -1,0 +1,88 @@
+/* Globální nastavení pro celý dokument */
+body {
+    background-color: black; /* Barva pozadí celého těla stránky bude černá */
+    margin: 0; /* Odstraní výchozí okraje stránky */
+    line-height: 130%; /* Zvětší výšku řádku pro lepší čitelnost */
+    color: gray;
+ }
+ 
+ /* Nastavení pro hlavní část stránky */
+ main {
+     width: 1200px; /* Šířka hlavního obsahu */
+     margin: 0 auto; /* Vycentruje hlavní obsah na stránce */
+     background-color: rgb(20, 20, 20); /* Barva pozadí hlavní části */
+     padding: 20px; /* Vnitřní okraje pro hlavní obsah */
+ }
+ 
+ /* Nastavení pro záhlaví */
+ header {
+     background-color: rgb(255, 255, 255); /* Barva pozadí záhlaví */
+     padding: 40px 0; /* Vnitřní odsazení od horního a spodního okraje */
+ }
+ 
+ /* Nastavení pro patičku */
+ footer {
+     text-align: center; /* Text bude zarovnán na střed */
+     color: white; /* Specifická šedá barva textu */
+     font-size: 20px; /* Velikost písma patičky */
+ }
+ 
+ /* Globální nastavení pro nadpisy */
+ h1, h2, h3 {
+     font-family: Arial, Helvetica, sans-serif; /* Výchozí písmo pro nadpisy */
+ }
+ 
+ /* Nastavení pro nadpis první úrovně */
+ h1 {
+     font-size: 2em; /* Dvojnásobná velikost základní velikosti textu */
+     color: black; /* Světle modrá barva textu */
+     text-align: center; /* Zarovnání textu na střed */
+     text-transform: uppercase; /* Text bude zobrazen velkými písmeny */
+    }
+ 
+ /* Nastavení pro nadpis druhé úrovně */
+ h2 {
+     color: whitesmoke; /* Specifická modrá barva textu */
+     margin-top: 30px; /* Horní okraj pro oddělení od předchozího obsahu */
+ }
+ 
+ /* Nastavení pro nadpis třetí úrovně */
+ h3 {
+     border-bottom: 1px dotted #333; /* Čárkované spodní ohraničení */
+     font-size: 1.2em; /* Zvýšená velikost písma */
+     margin-top: 20px; /* Horní okraj pro oddělení od předchozího obsahu */
+ }
+ 
+ /* Nastavení pro odkazy */
+ a {
+     color: #ff0000; /* Červená barva textu odkazů */
+     text-decoration: none; /* Bez podtržení textu */
+ }
+ 
+ /* Efekt přejetí myší pro odkazy */
+ a:hover {
+     background-color: bisque; /* Světlé pozadí při najetí myší */
+     text-decoration: underline; /* Přidá podtržení textu při najetí myší */
+ }
+ 
+ /* Speciální styl pro prvek <code> a <mark> */
+ code, mark {
+     font-family: 'Courier New', Courier, monospace; /* Písmo s pevnou šířkou znaků */
+ }
+ 
+ /* Nastavení pro zvýrazněný text (element <mark>) */
+ mark {
+     padding: 0 5px; /* Vnitřní odsazení textu */
+     background-color: #721717; /* Tmavě červené pozadí */
+     color: white; /* Bílý text pro kontrast */
+ }
+
+ 
+ /* Media query pro úpravu layoutu na menších obrazovkách */
+ @media screen and (max-width: 1200px) {
+     main {
+         width: 90%; /* Hlavní obsah zabere 90% šířky */
+         margin: 0 auto; /* Vycentrování hlavního obsahu */
+     }    
+ }
+ 

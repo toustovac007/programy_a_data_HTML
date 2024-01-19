@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programové a datové soubory</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Programové a datové soubory</h1>    
+  </header>   
+  <main>
+    <h2 id="soubory-adresare">Soubory a adresáře</h2>
+    <p>
+      <strong>Soubor</strong> (<em>file</em>) je množina souvisejících dat uložených na
+      diskové jednotce. Název souboru je obvykle tvořen jménem (ve Windows až
+      254 znaků) a příponou, která naznačuje typ souboru. K dalším vlastnostem
+      souboru patří jeho velikost, autor (vlastník), datum vytvoření, datum
+      změny, atributy, přístupová práva apod.
+    </p>
+    <p>
+      K přehlednější práci se soubory slouží systém <strong>adresářů</strong> či <strong>složek</strong>
+      (<em>directories, folders</em>). Adresáře tvoří na disku typicky hierarchickou
+      strukturu (<em>tree - strom</em>); základem je tzv. <strong>kořenový adresář</strong> (<em>root</em>)
+      označený symbolem „/“ (Unix, Linux), nebo „\“ (Windows). Každý adresář
+      může obsahovat soubory i podadresáře (subdirectories).
+    </p>
+    <h3>Adresářová cesta</h3>
+    <p>
+      <strong>Cesta</strong> (<em>path</em>) vyjadřuje umístění souboru vždy směrem od nejvyššího
+      adresáře: <code>C:\XAMPP\mysql\bin\mysql.exe</code>. Pro operace se soubory využíváme
+      někdy zástupné znaky (<em>wildcards</em>):
+    </p>
+    <ul>
+      <li>symbol <code>*</code> nahrazuje v názvu libovolný počet znaků (např. <mark>*.*</mark>);</li>
+      <li>symbol <code>?</code> nahrazuje jeden libovolný znak (např. <mark>s?s.txt</mark>).</li>
+    </ul>
+    <figure>
+      <img src="../img/wildcards.png" alt="Ukázka výpisu dávkových souborů">
+      <figcaption>Příklad použití wildcards - výpis všech dávkových souborů (*.bat)</figcaption>
+    </figure>
+    <h2 id="programove-soubory">Programové soubory</h2>
+    <p>Programové soubory obsahují instrukce, podle nichž procesor ve spolupráci s dalšími hardwarovými komponentami
+      plní konkrétní úlohy. Mohou být uloženy v již zkompilované <i>binární podobě</i> (nejčastěji ve strojovém kódu pro
+      danou
+      platformu), nebo ve <i>zdrojovém kódu</i>, obsahujícím příkazy určitého programovacího jazyka. Mezi programové
+      soubory
+      můžeme zařadit také skripty, soubory instrukcí v textové podobě, které ke svému spuštění vyžadují speciální
+      program - <a href="https://cs.wikipedia.org/wiki/Interpret_(software)">interpret</a>.</p>
+    <h3>Programové knihovny</h3>
+    <p>Větší programy jsou tvořeny <strong>programovými knihovnami</strong> (<em>runtime libraries</em>), speciálními
+      soubory s připravenými
+      funkcemi, které programy využívají pro svůj běh. Ve Windows to jsou např. soubory <b>DRV</b> a <b>SYS</b>
+      (obsahující zejména
+      <strong>ovladače</strong> čili <em>drivery</em>, ale i systémové funkce), nebo také <abbr
+        title="Dynamic Linking Library">DLL</abbr> (<em>dynamic linking library</em> - dynamicky linkované
+      knihovny), které mohou být podle potřeby za běhu (dynamicky) připojeny k jednomu i více programům.</p>
+    <h3>Spustitelné soubory a rezidentní programy</h3>
+    <p>Některé soubory s tzv. <i>spustitelnou příponou</i> (např. <code>.exe</code> a <code>.com</code> ve Windows,
+      <code>.sh</code> v Linuxu) slouží ke spuštění
+      programu - aktivaci procesu v rámci operačního systému. Za <a
+        href="https://cs.wikipedia.org/wiki/Terminate_and_Stay_Resident">rezidentní programy</a> (služby, démony)
+      označujeme ty
+      procesy, které jsou spuštěny automaticky po iniciaci operačního systému (např. <a
+        href="https://cs.wikipedia.org/wiki/Antivirov%C3%BD_program">antivirové programy</a>).</p>
+    <h2 id="datove-soubory">Datové soubory</h2>
+    <p>Datové soubory obsahují data různého charakteru (číselné, textové, grafické, zvukové údaje). K jejich zpracování
+      se používají konkrétní programy, a proto jsou často přípony těchto datových souborů asociovány (propojeny) s
+      určitou aplikací (např. <b>DOCX</b> s programem MS Word, nebo <b>XLSX</b> s programem MS Excel).</p>
+  </main>
+  <footer>
+    <hr>
+    <p>&copy; 2024, autor: <b>Tomáš Franta</b>, třída: <b>IT1</b> &reg;</p>
+  </footer>
+</body>
+
+</html>
